@@ -1,8 +1,14 @@
-#eureka:
-#  client:
-#    serviceUrl:
-#      defaultZone: http://localhost:8010/eureka/
+---
+spring:
+  profile: default
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8010/eureka/
 
+---
+spring:
+  profile: multiple-eureka
 eureka:
   client:
     serviceUrl:
